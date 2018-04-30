@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-container wrap fluid grid-list-lg>
+    <v-layout>
+    </v-layout>
+  </v-container>
 </template>
