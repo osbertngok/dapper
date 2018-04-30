@@ -1,7 +1,11 @@
 <template>
   <v-app>
     <!-- Sidebar -->
-    <v-navigation-drawer fixed app :mini-variant="miniVariant" v-model="drawer">
+    <!-- https://vuetifyjs.com/en/components/navigation-drawers -->
+    <!-- fixed: Position the element fixed -->
+    <!-- app: Designates the component as part of the application layout. Used for dynamically adjusting content sizing -->
+    <!-- miniVariant: Condenses navigation drawer width, also accepts the .sync modifier. With this, the drawer will re-open when clicking it -->
+    <v-navigation-drawer v-bind:fixed="true" v-bind:app="true" v-bind:mini-variant="miniVariant" v-model="drawer">
       <v-toolbar flat>
         <v-list>
           <v-list-tile>
@@ -26,7 +30,11 @@
       </v-list>
     </v-navigation-drawer>
     <!-- RHS Toolbar -->
-    <v-toolbar color="primary" dark fixed app>
+    <!-- https://vuetifyjs.com/en/components/toolbars -->
+    <!-- dark: Applies the dark theme variant -->
+    <!-- fixed: Position the element fixed -->
+    <!-- app: Designates the component as part of the application layout. Used for dynamically adjusting content sizing -->
+    <v-toolbar color="primary" v-bind:dark="true" v-bind:fixed="true" v-bind:app="true">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>

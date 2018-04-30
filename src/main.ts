@@ -28,6 +28,8 @@ import transitions from 'vuetify/es5/components/transitions';
 
 import App from './App.vue';
 
+import style from './styles/app.styl';
+
 Vue.use(Vuetify, {
     theme: {
         primary: '#1976D2',
