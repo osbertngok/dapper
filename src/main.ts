@@ -28,7 +28,7 @@ import transitions from 'vuetify/es5/components/transitions';
 
 import App from './App.vue';
 
-import style from './styles/app.styl';
+import './styles/app.styl';
 
 Vue.use(Vuetify, {
     theme: {
